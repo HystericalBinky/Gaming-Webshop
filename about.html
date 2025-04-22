@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Welcome to Gammer</title>
+        <meta name="description" content="New discounts in the Gammer Store. Discover seasonal offers and the latest discounts on fantastic games and add-ons for PS5 and PS4."/>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Gammer</a>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+
+        <!-- Home Banner -->
+        <div class="banner animeX" id="home">
+            <div class="bg">
+                <div class="content">
+                    <h2>A New Home for <br>
+                    Game Lovers</h2>
+                    <p>Welcome to Gammer, your go-to destination for all things PlayStation. Explore our curated collection of the latest titles and timeless classics. Join our vibrant gaming community and experience the best of PlayStation with us.</p>
+                    <a href="games.html" class="btn">Join Now</a>
+                </div>
+                <img src="assets/Assassin.png" alt="Assassin character from the popular Assasin Creed games.">
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="about animeX" id="about">
+            <div class="contentBx">
+                <h2>About Us</h2>
+                <p>Welcome to Gammer, your ultimate source for all things PlayStation. As dedicated gamers, we know the sheer joy of immersing ourselves in the captivating worlds that these consoles offer. Our website is designed to be a haven for fellow enthusiasts, providing a vast selection of the latest and most beloved titles for both PS4 and PS5. Whether you're a seasoned player or a newcomer to the gaming scene, our aim is to deliver an effortless and enjoyable shopping journey, tailored to your unique gaming preferences. We take pride in offering an extensive range of games, ensuring that every gamer can find something that resonates with their playing style. Our knowledgeable team is committed to sharing expertise, offering recommendations, and fostering a vibrant community for all PlayStation fans. Join us on this exciting gaming adventure, where our website serves as your go-to destination for all your PlayStation needs.
+                </p>
+                <a href="about.html">Read more</a>
+            </div>
+            <img src="assets/videogame.png" alt="A purple controller with small planets around it.">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="info">
+                <a href="index.html" class="logo">Gammer</a>
+                <p><i class='bx bx-copyright'></i>2023 All Rights Reserved</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            /* Sticky NavBar */
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+
+            /* Responsive NavBar */
+
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const nav = document.querySelector('.nav');
+                toggleMenu.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+
+            /* Scrolling Animation Effects */
+
+            window.addEventListener('scroll',function(){
+                var anime = document.querySelectorAll('.animeX');
+
+                for(var s = 0; s < anime.length; s++){
+                    var windowheight = window.innerHeight;
+                    var animetop = anime[s].getBoundingClientRect().top;
+                    var animepoint = 150;
+
+                    if(animetop < windowheight - animepoint){
+                        anime[s].classList.add('active');
+                    }
+                    else{
+                        anime[s].classList.remove('active');
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

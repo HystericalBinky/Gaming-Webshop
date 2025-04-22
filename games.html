@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Welcome to Gammer</title>
+        <meta name="description" content="New discounts in the Gammer Store. Discover seasonal offers and the latest discounts on fantastic games and add-ons for PS5 and PS4."/>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Gammer</a>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+
+        <!-- Home Banner -->
+        <div class="banner animeX" id="home">
+            <div class="bg">
+                <div class="content">
+                    <h2>A New Home for <br>
+                    Game Lovers</h2>
+                    <p>Welcome to Gammer, your go-to destination for all things PlayStation. Explore our curated collection of the latest titles and timeless classics. Join our vibrant gaming community and experience the best of PlayStation with us.</p>
+                    <a href="games.html" class="btn">Join Now</a>
+                </div>
+                <img src="assets/Assassin.png" alt="Assassin character from the popular Assasin Creed games.">
+            </div>
+        </div>
+
+        <!-- Games -->
+        <div class="games animeX" id="games">
+            <h2>Popular Games</h2>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="ps4">PS4 Games</li>
+                <li class="list" data-filter="ps5">PS5 Games</li>
+            </ul>
+            <div class="cardBx">
+                <div class="card" data-item="ps4">
+                    <img src="assets/game4.png" alt="Minecraft">
+                    <div class="content">
+                        <h4>PS4: Minecraft</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$20</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game3.png" alt="Grand Theft Auto V">
+                    <div class="content">
+                        <h4>PS4: Grand Theft Auto V</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$40</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game3.png" alt="Grand Theft Auto V">
+                    <div class="content">
+                        <h4>PS5: Grand Theft Auto V</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$40</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game1.png" alt="Hogwarts Legacy">
+                    <div class="content">
+                        <h4>PS4: Hogwarts Legacy</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game1.png" alt="Hogwarts Legacy">
+                    <div class="content">
+                        <h4>PS5: Hogwarts Legacy</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$75</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game2.png" alt="Red Dead Redemption 2">
+                    <div class="content">
+                        <h4>PS4: Red Dead Redemption 2</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$60</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game12.png" alt="Baldur's Gate 3">
+                    <div class="content">
+                        <h4>PS5: Baldur's Gate 3</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game10.png" alt="Assasin's Creed Valhalla">
+                    <div class="content">
+                        <h4>PS4: Assasin's Creed Valhalla</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game10.png" alt="Assasin's Creed Valhalla">
+                    <div class="content">
+                        <h4>PS5: Assasin's Creed Valhalla</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game7.png" alt="God of War Ragnarök">
+                    <div class="content">
+                        <h4>PS4: God of War Ragnarök</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game7.png" alt="God of War Ragnarök">
+                    <div class="content">
+                        <h4>PS5: God of War Ragnarök</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$80</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game6.png" alt="Assassin's Creed Mirage">
+                    <div class="content">
+                        <h4>PS4: Assasin's Creed Mirage</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$50</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game6.png" alt="Assassin's Creed Mirage">
+                    <div class="content">
+                        <h4>PS5: Assasin's Creed Mirage</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$50</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game9.png" alt="STAR WARS Jedi: Fallen Order">
+                    <div class="content">
+                        <h4>PS4: STAR WARS Jedi: Fallen Order</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$50</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game9.png" alt="STAR WARS Jedi: Fallen Order">
+                    <div class="content">
+                        <h4>PS5: STAR WARS Jedi: Fallen Order</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$50</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game5.png" alt="STAR WARS Jedi: Survivor">
+                    <div class="content">
+                        <h4>PS5: STAR WARS Jedi: Survivor</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$80</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps4">
+                    <img src="assets/game8.png" alt="Marvel's Spider-Man: Miles Morales">
+                    <div class="content">
+                        <h4>PS4: Marvel's Spider-Man: Miles Morales</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$60</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game8.png" alt="Marvel's Spider-Man: Miles Morales">
+                    <div class="content">
+                        <h4>PS5: Marvel's Spider-Man: Miles Morales</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$60</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="ps5">
+                    <img src="assets/game11.png" alt="Marvel's Spider-Man 2">
+                    <div class="content">
+                        <h4>PS5: Marvel's Spider-Man 2</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$70</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="info">
+                <a href="index.html" class="logo">Gammer</a>
+                <p><i class='bx bx-copyright'></i>2023 All Rights Reserved</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            /* Sticky NavBar */
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+
+            /* Responsive NavBar */
+
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const nav = document.querySelector('.nav');
+                toggleMenu.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+
+            /* Scrolling Animation Effects */
+
+            window.addEventListener('scroll',function(){
+                var anime = document.querySelectorAll('.animeX');
+
+                for(var s = 0; s < anime.length; s++){
+                    var windowheight = window.innerHeight;
+                    var animetop = anime[s].getBoundingClientRect().top;
+                    var animepoint = 150;
+
+                    if(animetop < windowheight - animepoint){
+                        anime[s].classList.add('active');
+                    }
+                    else{
+                        anime[s].classList.remove('active');
+                    }
+                }
+            })
+
+            /* Filterable Cards */
+
+            let list = document.querySelectorAll('.list');
+            let card = document.querySelectorAll('.card');
+
+            for(let i = 0; i<list.length; i++){
+                list[i].addEventListener('click',function(){
+                    for(let j=0; j<list.length; j++){
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    let dataFilter = this.getAttribute('data-filter');
+
+                    for( let k=0; k<card.length; k++)
+                    {
+                        card[k].classList.remove('active');
+                        card[k].classList.add('hide');
+
+                        if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                            card[k].classList.remove('hide');
+                            card[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>
